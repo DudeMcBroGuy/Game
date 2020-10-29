@@ -15,7 +15,6 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class Htp implements Initializable {
-    @FXML public Stage stage;
     @FXML public Rectangle u;
     @FXML public Rectangle d;
     @FXML public Rectangle l;
@@ -23,34 +22,42 @@ public class Htp implements Initializable {
     @FXML public Rectangle f;
     @FXML public Rectangle b;
     @FXML public Button back;
+    public Stage stage;
 
-
-    @FXML public void setOnKeyPressed(KeyEvent event) {
+    // KeyEvent Handler
+    public void setOnKeyPressed(KeyEvent event) {
         switch (event.getCode()) {
-            case W: u.setFill(Color.rgb(67, 67, 67)); break;
-            case S: d.setFill(Color.rgb(67, 67, 67)); break;
-            case A: l.setFill(Color.rgb(67, 67, 67)); break;
-            case D: r.setFill(Color.rgb(67, 67, 67)); break;
-            case UP: f.setFill(Color.rgb(67, 67, 67)); break;
-            case DOWN: b.setFill(Color.rgb(67, 67, 67)); break;
+            case W -> u.setFill(Color.rgb(67, 67, 67));
+            case S -> d.setFill(Color.rgb(67, 67, 67));
+            case A -> l.setFill(Color.rgb(67, 67, 67));
+            case D -> r.setFill(Color.rgb(67, 67, 67));
+            case I -> f.setFill(Color.rgb(67, 67, 67));
+            case K -> b.setFill(Color.rgb(67, 67, 67));
         }
     }
 
-    @FXML public void setOnKeyReleased(KeyEvent event) {
+    // KeyEvent Handler
+    public void setOnKeyReleased(KeyEvent event) {
         switch (event.getCode()) {
-            case W: u.setFill(Color.rgb(175, 175, 175)); break;
-            case S: d.setFill(Color.rgb(175, 175, 175)); break;
-            case A: l.setFill(Color.rgb(175, 175, 175)); break;
-            case D: r.setFill(Color.rgb(175, 175, 175)); break;
-            case UP: f.setFill(Color.rgb(175, 175, 175)); break;
-            case DOWN: b.setFill(Color.rgb(175, 175, 175)); break;
+            case W -> u.setFill(Color.rgb(175, 175, 175));
+            case S -> d.setFill(Color.rgb(175, 175, 175));
+            case A -> l.setFill(Color.rgb(175, 175, 175));
+            case D -> r.setFill(Color.rgb(175, 175, 175));
+            case I -> f.setFill(Color.rgb(175, 175, 175));
+            case K -> b.setFill(Color.rgb(175, 175, 175));
         }
     }
 
-    @FXML public void backButtonHandler(ActionEvent event) {
+    // Back Button Handler
+    public void backButtonHandler(ActionEvent event) {
+        // Get window
         stage = (Stage) back.getScene().getWindow();
+
+        // Load FXML File
         FXMLLoad load = new FXMLLoad();
         AnchorPane root = load.getView("main");
+
+        // Display Scene on Window
         stage.setScene(new Scene(root));
     }
 

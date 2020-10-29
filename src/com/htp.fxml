@@ -22,7 +22,7 @@
                   <Rectangle fx:id="r" arcHeight="25.0" arcWidth="25.0" fill="#afafaf" height="75.0" stroke="#282828" strokeType="INSIDE" strokeWidth="2.0" width="75.0" />
                </children>
             </HBox>
-            <Label text="Use WASD and the arrow keys to move" textFill="#282828" translateY="-70.0">
+            <Label text="Use WASDIK to move" textFill="#282828" translateY="-70.0">
                <font>
                   <Font name="Consolas" size="20.0" />
                </font>
