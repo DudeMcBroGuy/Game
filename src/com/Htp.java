@@ -27,24 +27,24 @@ public class Htp implements Initializable {
     // KeyEvent Handler
     public void setOnKeyPressed(KeyEvent event) {
         switch (event.getCode()) {
-            case W -> u.setFill(Color.rgb(67, 67, 67));
-            case S -> d.setFill(Color.rgb(67, 67, 67));
+            case W -> f.setFill(Color.rgb(67, 67, 67));
+            case S -> b.setFill(Color.rgb(67, 67, 67));
             case A -> l.setFill(Color.rgb(67, 67, 67));
             case D -> r.setFill(Color.rgb(67, 67, 67));
-            case I -> f.setFill(Color.rgb(67, 67, 67));
-            case K -> b.setFill(Color.rgb(67, 67, 67));
+            case I -> u.setFill(Color.rgb(67, 67, 67));
+            case K -> d.setFill(Color.rgb(67, 67, 67));
         }
     }
 
     // KeyEvent Handler
     public void setOnKeyReleased(KeyEvent event) {
         switch (event.getCode()) {
-            case W -> u.setFill(Color.rgb(175, 175, 175));
-            case S -> d.setFill(Color.rgb(175, 175, 175));
+            case W -> f.setFill(Color.rgb(175, 175, 175));
+            case S -> b.setFill(Color.rgb(175, 175, 175));
             case A -> l.setFill(Color.rgb(175, 175, 175));
             case D -> r.setFill(Color.rgb(175, 175, 175));
-            case I -> f.setFill(Color.rgb(175, 175, 175));
-            case K -> b.setFill(Color.rgb(175, 175, 175));
+            case I -> u.setFill(Color.rgb(175, 175, 175));
+            case K -> d.setFill(Color.rgb(175, 175, 175));
         }
     }
 

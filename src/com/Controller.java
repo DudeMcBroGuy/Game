@@ -27,7 +27,10 @@ public class Controller implements Initializable {
         AnchorPane root = load.getView("levelOne");
 
         // Display Scene on Window
-        stage.setScene(new Scene(root));
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+
+        root.requestFocus();
     }
 
     // HowToPlay Button Event Handler
@@ -45,11 +48,8 @@ public class Controller implements Initializable {
 
     // Quit Button Event Handler
     public void quitButtonHandler(ActionEvent event) {
-        // Get Window
-        stage = (Stage) play.getScene().getWindow();
-
-        // Close Window
-        stage.close();
+        // Close the program
+        System.exit(0);
     }
 
     @Override

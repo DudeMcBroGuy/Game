@@ -13,31 +13,30 @@ public class LevelOne implements Initializable {
     @FXML public AnchorPane levelOneScene;
     @FXML public Sphere player;
 
-
-    public void setOnKeyPressed(KeyEvent event) {
+    public void moveOnKeyPressed(KeyEvent event) {
         switch (event.getCode()) {
-            case W -> System.out.println("1");
-            case S -> System.out.println("2");
-            case A -> System.out.println("3");
-            case D -> System.out.println("4");
-            case I -> System.out.println("5");
-            case K -> System.out.println("6");
+            case W -> player.setTranslateZ(player.getTranslateZ() + 5);
+            case S -> player.setTranslateZ(player.getTranslateZ() - 5);
+            case A -> player.setTranslateX(player.getTranslateX() - 5);
+            case D -> player.setTranslateX(player.getTranslateX() + 5);
+            case I -> player.setTranslateY(player.getTranslateY() - 5);
+            case K -> player.setTranslateY(player.getTranslateY() + 5);
         }
     }
 
-    public void setOnKeyReleased(KeyEvent event) {
+    public void stayOnKeyReleased(KeyEvent event) {
         switch (event.getCode()) {
-            case W -> System.out.println("1");
-            case S -> System.out.println("2");
-            case A -> System.out.println("3");
-            case D -> System.out.println("4");
-            case I -> System.out.println("5");
-            case K -> System.out.println("6");
+            case W: break;
+            case S: break;
+            case A: break;
+            case D: break;
+            case I: break;
+            case K: break;
         }
     }
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
     }
+    
 }
