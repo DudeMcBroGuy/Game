@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Sphere?>
+<AnchorPane fx:id="levelOneScene" onKeyPressed="#setOnKeyPressed" prefHeight="506.25" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.LevelOne">
+   <children>
+      <Sphere fx:id="player" layoutX="361.0" layoutY="253.0" radius="50" />
+   </children>
+</AnchorPane>

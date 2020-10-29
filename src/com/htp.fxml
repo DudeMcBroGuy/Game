@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane fx:id="htpScene" onKeyPressed="#setOnKeyPressed" onKeyReleased="#setOnKeyReleased" prefHeight="506.25" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.Htp">
+   <children>
+      <Rectangle fx:id="f" arcHeight="25.0" arcWidth="25.0" fill="#afafaf" height="65.0" layoutX="304.0" layoutY="185.0" stroke="#282828" strokeType="INSIDE" strokeWidth="2.0" translateX="-46.0" width="65.0" />
+      <VBox alignment="CENTER" prefWidth="400.0" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="75.0" AnchorPane.topAnchor="75.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="329.0" prefWidth="265.0" spacing="20.0">
+               <children>
+                  <Rectangle fx:id="l" arcHeight="25.0" arcWidth="25.0" fill="#afafaf" height="75.0" stroke="#282828" strokeType="INSIDE" strokeWidth="2.0" width="75.0" />
+                  <VBox alignment="CENTER" spacing="20.0">
+                     <children>
+                        <Rectangle fx:id="u" arcHeight="25.0" arcWidth="25.0" fill="#afafaf" height="75.0" stroke="#282828" strokeType="INSIDE" strokeWidth="2.0" translateY="-48.0" width="75.0" />
+                        <Rectangle fx:id="d" arcHeight="25.0" arcWidth="25.0" fill="#afafaf" height="75.0" stroke="#282828" strokeType="INSIDE" strokeWidth="2.0" translateY="-48.0" width="75.0" />
+                     </children>
+                  </VBox>
+                  <Rectangle fx:id="r" arcHeight="25.0" arcWidth="25.0" fill="#afafaf" height="75.0" stroke="#282828" strokeType="INSIDE" strokeWidth="2.0" width="75.0" />
+               </children>
+            </HBox>
+            <Label text="Use WASD and the arrow keys to move" textFill="#282828" translateY="-70.0">
+               <font>
+                  <Font name="Consolas" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Button fx:id="back" alignment="CENTER" cancelButton="true" contentDisplay="CENTER" layoutX="650.0" layoutY="93.0" mnemonicParsing="false" onAction="#backButtonHandler" prefHeight="50.0" prefWidth="150.0" text="Back">
+         <font>
+            <Font name="Consolas Bold" size="20.0" />
+         </font>
+      </Button>
+      <Rectangle fx:id="b" arcHeight="25.0" arcWidth="25.0" fill="#afafaf" height="85.0" layoutX="219.0" layoutY="232.0" stroke="#282828" strokeType="INSIDE" strokeWidth="2.0" width="85.0" />
+   </children>
+</AnchorPane>
